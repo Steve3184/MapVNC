@@ -1,0 +1,64 @@
+name: MapVNC
+version: '1.0'
+main: top.steve3184.mapvnc.MapVNC
+api-version: '1.21'
+prefix: MapVNC
+authors: [Steve3184]
+description: VNC Viewer on maps
+depend: [ MapEngine ]
+commands:
+  mapvnc:
+    description: Main command for the mapvnc plugin.
+    aliases: [mvnc]
+    permission: mapvnc.command.base
+    permission-message: You do not have permission to use mapvnc commands.
+permissions:
+  mapvnc.*:
+    description: Grants access to all MapVNC features and commands.
+    children:
+      - mapvnc.command.*
+
+  mapvnc.command.*:
+    description: Grants access to all MapVNC commands.
+    children:
+      - mapvnc.command.base
+      - mapvnc.command.create
+      - mapvnc.command.remove
+      - mapvnc.command.list
+      - mapvnc.command.set
+      - mapvnc.command.connect
+      - mapvnc.command.disconnect
+      - mapvnc.command.input
+      - mapvnc.command.key
+
+  mapvnc.command.create:
+    description: Allows the user to create new VNC displays.
+    default: op
+
+  mapvnc.command.remove:
+    description: Allows the user to remove existing VNC displays.
+    default: op
+
+  mapvnc.command.list:
+    description: Allows the user to list all active VNC displays.
+    default: op
+
+  mapvnc.command.set:
+    description: Allows the user to modify properties of a VNC display (address, pos, size, etc.).
+    default: op
+
+  mapvnc.command.connect:
+    description: Allows the user to connect a VNC display to its server.
+    default: op
+
+  mapvnc.command.disconnect:
+    description: Allows the user to disconnect a VNC display.
+    default: op
+
+  mapvnc.command.input:
+    description: Allows the user to type text into a VNC display.
+    default: op
+
+  mapvnc.command.key:
+    description: Allows the user to send a key press to a VNC display.
+    default: op
