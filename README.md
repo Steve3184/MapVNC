@@ -30,7 +30,7 @@ Whether for server administration, remote monitoring, or just for fun, MapVNC pr
 
 - **Server Software**: Paper, Spigot, or a compatible fork (1.21+ recommended).
 - **Java**: Java 21 or higher.
-- **Dependency**: **[MapEngine 1.18.10+](https://modrinth.com/plugin/mapengine)** is a **required** dependency. MapVNC will not start without it.
+- **Dependency**: **[MapEngine 1.8.10+](https://modrinth.com/plugin/mapengine)** is a **required** dependency. MapVNC will not start without it.
 
 ## Installation
 

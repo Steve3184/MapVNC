@@ -30,7 +30,7 @@ MapVNC 是一款功能强大的 Spigot/Paper 插件，它将一个完全可交�
 
 - **服务器软件**：Paper、Spigot 或其兼容的分支（推荐 1.21+）。
 - **Java**：Java 21 或更高版本。
-- **依赖项**：**[MapEngine 1.18.10+](https://modrinth.com/plugin/mapengine)** 是一个**必需**的依赖项。没有它，MapVNC 将无法启动。
+- **依赖项**：**[MapEngine 1.8.10+](https://modrinth.com/plugin/mapengine)** 是一个**必需**的依赖项。没有它，MapVNC 将无法启动。
 
 ## 安装
 
